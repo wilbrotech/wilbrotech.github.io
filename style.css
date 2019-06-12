@@ -265,24 +265,70 @@ footer{
 }
 
 
-@media screen and (max-width: 320px){
-    .btn-1,.btn-2{
-        text-align: center;
-    }
-    footer{
-        text-align: center;
-    }
-    .section-six .end{
-        text-align: center;
-        margin-top: 2%;
-    }
-}
+
 @media screen and (max-width: 751px){
+    .section-one{
+        padding-bottom: 3%;
+    }
+    .section-one .heading-one{
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .section-one .one{
+        font-size: 12px;
+        padding: 10px 5px;
+        margin-bottom: 20px;
+    }
+    .section-one .btn-1{
+        padding: 10px 15px;
+        margin-top: 4%;
+        font-size: 11px;
+        margin-left: 15px;
+    }
     .section-one .btn-2{
-        display: none;
+        padding: 10px 15px;
+        margin-top: 4%;
+        font-size: 11px;
+        margin-left: -25px;
     }
     .section-one .image{
         display: none;
+    }
+    .section-two h4{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .section-two p{
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+    .section-three h2{
+        font-size: 23px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .section-three .card-title, .section-four .card-title{
+        font-size: 18px;
+        margin-top: 3%;
+        margin-bottom: 4%;
+    }
+    .section-three .card-text, .section-four .card-text{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .section-five h2{
+        font-size: 25px;
+        margin-left: 18px;
+    }
+    .section-five p{
+        font-size: 16px;
+        margin-left: 18px;
+    }
+    .section-six h3{
+        font-size: 18px;
+        margin: 20px 5px;;
     }
     .section-five .img1{
         display: none;
@@ -293,5 +339,50 @@ footer{
     .section-six .end{
         text-align: center;
         margin-top: 2%;
+    }
+    .section-seven p{
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .section-seven h4{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .section-seven ul li{
+        font-size: 13px;
+        text-align: justify;
+    }
+    .section-eight h3{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .section-eight p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .back, #next, #send{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .section-eight span{
+        font-size: 13px;
+        padding: -25px 30px;
+    }
+    .section-eight .form-control{
+        font-size: 13px;
+        justify-content: left;
+        text-align: left;
+        padding: -25px 50px;
+    }
+    .last-section .logo{
+        margin: 20px 0;
+    }
+    .last-section h4{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .last-section p{
+        font-size: 15px;
+        padding-top: 5px 0;
     }
 }
