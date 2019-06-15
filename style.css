@@ -179,18 +179,31 @@ a{
     height: auto;
 }
 .section-six{
-    background-image: linear-gradient(to right, #1D42DE, #03D8F5);
-    margin-top: 2px;
-    padding: 15px 0;
-    color: #fff;
+    background-image: url('wilbrotech-back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+    padding-top: 7%;
+    padding-bottom: 17%;
+}
+.section-six h3{
+    color: #03D8F5;
+    width: 70%;
+    font-size: 30px;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-weight: bold;
 }
 .section-six .end{
     text-align: end;
 }
 .section-six .btn-three{
-    background-color: #fff;
-    padding: 10px 15px;
+    background-color: #03D8F5;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 22px;
     border-radius: 30px;
+    margin-bottom: 5% 0;
 }
 .section-six .btn-three:hover{
     background-color: #1D42DE;
@@ -380,8 +393,9 @@ footer{
         margin-left: 18px;
     }
     .section-six h3{
-        font-size: 18px;
-        margin: 20px 5px;;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 17%;
     }
     .section-five .img1{
         display: none;
@@ -389,9 +403,12 @@ footer{
     footer{
         text-align: center;
     }
+    .section-six{
+        padding: 10% 0 20% 0;
+    }
     .section-six .end{
         text-align: center;
-        margin-top: 2%;
+        padding: 4% 0;
     }
     .section-seven p{
         padding-top: 20px;
