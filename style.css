@@ -7,10 +7,13 @@ body{
 a{
     text-decoration: none;
 }
-.navbar{
+.navbar-light{
     width: 100%;
-    background-image: linear-gradient(to right, #1D42DE, #03D8F5);
+    background: linear-gradient(to right, #03D8F5, #1D42DE);
     padding: 10px;
+}
+.navbar-light.scrolled{
+    background: linear-gradient(to right, #1D42DE, #03D8F5);
 }
 .container .navbar-brand{
     color: #fff;
@@ -33,7 +36,7 @@ a{
     color: #00B4F8;
 }
 .section-one{
-    background-image: linear-gradient(to right, #03D8F5, #1D42DE);
+    background: linear-gradient(to right, #03D8F5, #1D42DE);
 }
 .section-one .container{
     padding-top: 10%;
