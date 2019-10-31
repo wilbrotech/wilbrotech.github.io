@@ -7,6 +7,54 @@ body{
 a{
     text-decoration: none;
 }
+.navbar-toggler{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.navbar-toggler span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #262626;
+    position: absolute;
+    transition: 0.3s;
+}
+.navbar-toggler span:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+    transition: 0.3s;
+}
+.navbar-toggler span:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #262626;
+    transition: 0.3s;
+}
+.navbar-toggler.toggle span{
+    border: none;
+    background: transparent;
+}
+.navbar-toggler.toggle span:before{
+    top: -5px;
+    transform: rotate(45deg);
+}
+.navbar-toggler.toggle span:after{
+    top: -5px;
+    transform: rotate(-45deg);
+}
+
 .navbar-light{
     width: 100%;
     background: linear-gradient(to right, #03D8F5, #1D42DE);
@@ -39,14 +87,20 @@ a{
     background: linear-gradient(to right, #03D8F5, #1D42DE);
 }
 .section-one .container{
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 12%;
 }
 .section-one .heading-one{
-    font-family: 'Oxygen';
+    font-family: 'Poppins';
     font-size: 50px;
     color: #fff;
-    margin-top: 10%;
+    font-weight: 700;
+    -webkit-text-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+    -moz-text-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+    text-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+}
+.section-one .section-image{
+    display: none;
 }
 .one{
     margin: 10px 5px;
@@ -65,101 +119,127 @@ a{
     color: #fff;
     font-weight: bold;
 }
-.btn-1,.btn-2{
-    border-radius: 5px;
+.btn-2{
+    border-radius: 30px;
     border: none;
     color: #fff;
-    background-color: rgb(107, 6, 230);
-    padding: 15px 25px;
-    margin-right: 30px;
-    margin-top: 4%;
+    background-color: #1F60D7;
+    padding: 15px 35px;
+    margin-left: 15px;
+    margin-top: 5%;
     text-transform: uppercase;
+    -webkit-box-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+    -moz-box-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+    box-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
 }
-.btn-1:hover,.btn-2:hover{
-    background-color: #fff;
-    color: black;
+.btn-2:hover{
+    background-color: rgba(31, 95, 215, 0.666);
 }
 .col-md-6 .image{
     max-width: 120%;
     height: auto;
 }
 
-.section-two{
-    margin-top: 5%;
-    margin-bottom: 5%;
+/*  Section Three */
+#section-three{
+    margin-top: 7%;
 }
-.section-two h4{
-    font-family: 'Oxygen';
-    font-size: 34px;
-    margin: 3px 0;
-    padding: 0;
+#section-three h2{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    -webkit-text-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+    -moz-text-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+    text-shadow: -1px 5px 20px -4px rgba(20,120,231,1);
+}
+.what-we-do{
+    margin: 4% 0;
+}
+#section-three .card{
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
+    -moz-box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
+    box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
+}
+#section-three .card img{
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+}
+#section-three .card .chart{
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+}
+#section-three .card a{
+    text-decoration: none;
+}
+.content{
+    position: relative;
     width: 100%;
-    font-weight: bold;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
 }
-#under{
+.content .content-overlay{
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 22rem;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+.content-details {
+    position: absolute;
     text-align: center;
-    margin-top: 3px;
-    width: 6%;
-    border-color: rgba(0, 0, 0, 0.659);
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
-.section-two p{
-    font-size: 24px;
-    margin-top: 5px;
+  
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
 }
-.section-two span{
-    color: #0084F0;
+  
+.content-details p{
+    color: rgb(141, 138, 138);
+    font-size: 15px;
 }
-.section-two .text-muted{
-    font-size: 18px;
-    margin-top: 3%;
+.fadeIn-top{
+    top: 20%;
 }
-#section-four{
-    background-color: rgba(245, 249, 253, 0.482);
-    padding-top: 2%;
-    padding-bottom: 5%;
+.fadeIn-top button{
+      border: none;
+      border-radius: 30px;
+      padding: 10px 30px;
+      color: #fff;
+      margin: 20px 5px;
+      cursor: pointer;
 }
-#section-four h4{
-    font-weight: bold;
-}
-.section-three #services{
-    margin-bottom: 3%;
-}
-.section-three h2{
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-}
-#underline{
-    text-align: center;
-    width: 20%;
-    height: 15px;
-    border-color: rgba(0, 0, 0, 0.659);
-}
-#more-info{
-    margin-top: 5%;
-}
-#circle{
-    background-image: linear-gradient(to top, #03D8F5, #1D42DE);
-    border-radius: 50%;
-    padding: 5%;
-    color: #fff;
-    margin-bottom: 5%;
-    box-shadow: 2px 3px 5px rgb(124, 121, 121);
-}
-#circle:hover{
-    border-bottom: 1px solid rgb(124, 121, 121);
-    box-shadow: 2px 7px 7px rgb(124, 121, 121);
-}
-#dev #circle{
-    padding: 5% 8%;
-}
-#soc #circle{
-    padding: 5% 7%;
-}
-.card i:hover{
-    color: #0084F0;
-}
-
+  /* Section Five */
 .section-five{
     margin-top: 3%;
     background-color: #F5F9FD;
@@ -181,68 +261,79 @@ a{
     max-width: 100%;
     height: auto;
 }
+/* Section Six */
 .section-six{
-    background-image: url('wilbrotech-back.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    height: 250px;
-    padding-top: 7%;
-    padding-bottom: 17%;
+    background-color: #F5F9FD;
+    margin: 5% 0;
+    padding: 5% 0; 
 }
-.section-six h3{
-    color: #03D8F5;
-    width: 70%;
-    font-size: 30px;
-    margin-left: 40%;
-    margin-bottom: 5%;
+.section-six-text{
+    margin-left: 4em;
+    text-align: justify;
+}
+.section-six-text h3{
     font-weight: bold;
+    padding-bottom: 15px;
 }
-.section-six .end{
-    text-align: end;
+.section-six-text p{
+    padding-top: 10px;
+    line-height: 32px;
+    font-size: 14px;
 }
-.section-six .btn-three{
-    background-color: #03D8F5;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 12px 22px;
-    border-radius: 30px;
-    margin-bottom: 5% 0;
+.section-six #second-text{
+    margin-top: 10px;
+    padding-top: 10px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: justify;
 }
-.section-six .btn-three:hover{
-    background-color: #1D42DE;
-    color: #fff;
-}
+/* Section Seven */
 .section-seven{
     width: 100%;
-    margin: 2% 0;
-    padding: 5%;
+    height: 700px;
+    background: #E7F2FD;
+    padding: 5% 5px 10% 5px;
 }
-.section-seven #seven-img{
-    padding-left: 5%;
-    margin-top: 7%;
+
+.section-seven img{
+    margin-top: 5%;
+    padding-bottom: 7%;
 }
-.section-seven #seven-img p{
-    margin-top: 4%;
-    color: #C3C3CE;
-    text-align: justify;
-    line-height: 30px;
+.choose-us{
+    padding: 5% 5px;
+    margin: 3% 0;
 }
-.section-seven #text{
-    padding-left: 10%;
-    text-align: justify;
+.choose-section{
+    padding-top: 6%;
+    
 }
-.section-seven #text h4{
-    margin-bottom: 10%;
+.choose-section h2{
+    padding-bottom: 1em;
+    font-weight: bold;
 }
-.section-seven #text p,.section-seven #text ul li{
-    color: #C3C3CE;
-    line-height: 30px;
-    text-align: justify;
+.choose-section p{
+    line-height: 2em;
 }
+.choose-section i{
+    color: #04D7F5;
+    padding-right: 10px;
+}
+.section-button{
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 10px 35px;
+    font-size: 18px;
+    background: #1D47DF;
+    -webkit-box-shadow: -1px 5px 20px -10px rgba(13,170,227,1);
+    -moz-box-shadow: -1px 5px 20px -10px rgba(13,170,227,1);
+    box-shadow: -1px 5px 20px -10px rgba(13,170,227,1);
+}
+/* Section Eight */
 .section-eight{
     background-image: linear-gradient(to right, #03D8F5,  #1D42DE);
     color: #fff;
     padding: 4% 20%;
+    margin-top: 3%;
 }
 .section-eight p{
     margin: 4% 0;
@@ -254,7 +345,6 @@ a{
     text-align: left;
     padding: 10px 10px;
     border-radius: 5px;
-    width: 90%;
 }
 .back span,#next span{
     margin-left: 13px;
@@ -276,84 +366,138 @@ input:focus,textarea:focus{
     text-align: left;
     padding: 10px 10px;
     border-radius: 5px;
-    width: 90%;
+    
 }
 #next textarea{
     border: none;
 }
 #send{
-    width: 90%;
     background-color: #01E0F6;
     padding: 2% 0;
     border-radius: 5px;
     color: #fff;
 }
 #send:hover{
-    background-color: #fff;
+    background-color: #1C4CE0;
 }
+
 footer{
-    background-color: #F5F9FD;
-    padding: 2% 0;
+    background-color: #33485F;
 }
-.last-section .company p{
-    text-align: justify;
-    margin-right: 3%;
+.footer-section{
+    padding: 10px 0;
+    background-color: #2A3B4E;
 }
-.links a{
-    text-decoration: none;
-}
-.last-section .logo{
-    background-color: #0084F0;
+.footer-section a .fa-facebook-f{
+    margin: 15px 10px;
+    padding: 10px 13px;
     border-radius: 50%;
-    padding: 4% 1%;
-    box-shadow: 2px 5px 7px #C3C3CE;
+    color: #fff;
+    background-color: #3663A0;
 }
-.last-section .logo:hover{
-    box-shadow: 2px 10px 10px #C3C3CE;
+.footer-section a .fa-twitter{
+    margin: 15px 10px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(7, 129, 195);
 }
-.last-section .fa-facebook{
-    color: rgba(0, 72, 255, 0.625);
-    padding-right: 10px;
+.footer-section a .fa-instagram{
+    margin: 15px 10px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(244, 140, 3);
 }
-.last-section .fa-twitter{
-    color: #0084F0;
-    padding-right: 10px;
+.footer-section a .fa-linkedin-in{
+    margin: 15px 10px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(31, 85, 221);
 }
-.last-section .fa-instagram{
-    color: rgba(255, 42, 0, 0.829);
-    padding-right: 10px;
+.footer-section a i:hover{
+    background-color: #03D3F4;
 }
-.last-section i:hover{
-    color:  rgba(0, 0, 255, 0.489);
+.footer-links p{
+    color: #fff;
+    opacity: 0.8;
+}
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+.footer-links a:hover{
+    color: #03D3F4;
+}
+.footer-links .copy{
+    font-size: 14px;
+    color: #000;
+    opacity: 0.8;
+}
+@media screen and (max-width: 900px){
+    /* Section Six */
+    
+    .section-six-text{
+        margin-left: 0;
+        margin-top: 4em;
+        text-align: justify;
+    }
+    .section-six-text h3{
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 22px;
+    }
+    .section-six-text p{
+        padding-top: 10px;
+        line-height: 32px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    #second-text p{
+        font-size: 20px;
+    }
 }
 
 
-
-
-@media screen and (max-width: 751px){
+@media screen and (max-width: 769px){
+    .navbar-nav{
+        margin-left: 0;
+    }
+    .nav-link{
+        padding: 3%;
+    }
     .section-one{
         padding-bottom: 3%;
+        text-align: center;
     }
     .section-one .heading-one{
-        font-size: 25px;
+        font-size: 50px;
+        font-weight: bold;
         padding: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 2em;
+        line-break: normal;
+    }
+    .section-one .header-display{
+        display: none;
     }
     .section-one .one{
         font-size: 12px;
         padding: 10px 5px;
         margin-bottom: 20px;
     }
+    .section-one .section-image{
+        display: block;
+    }
     .section-one .btn-1{
-        padding: 10px 15px;
-        margin-top: 4%;
-        font-size: 11px;
-        margin-left: 15px;
+        display: none;
     }
     .section-one .btn-2{
-        padding: 10px 15px;
-        margin-top: 4%;
-        font-size: 11px;
+        border-radius: 30px;
+        padding: 18px 35px;
+        margin-top: 5em;
+        font-size: 30px;
         margin-left: -25px;
     }
     .section-one .image{
@@ -369,24 +513,24 @@ footer{
         font-size: 20px;
         padding: 5px 20px;
     }
-    .section-three h2{
-        font-size: 27px;
-        margin-top: 15px;
-        font-weight: bold;
+    /* Section Three */
+    #section-three{
+        width: 100%;
+        margin-top: 4em;
     }
-    #circle{
-        margin-top: 5%;
+    #section-three h2{
+        font-size: 35px;
     }
-    #section-four h4{
+    #section-three .card{
+        width: 100%;
         margin: 3% 0;
-        font-size: 27px;
-        font-weight: bold;
     }
-    #section-four p{
-        font-size: 20px;
-        text-align: justify;
+    #section-three .card h5{
+        font-size: 25px;
     }
-    
+    #section-three .card a{
+        font-size: 24px;
+    }
     .section-five h2{
         font-size: 25px;
         margin-left: 18px;
@@ -406,35 +550,68 @@ footer{
     footer{
         text-align: center;
     }
-    .section-six{
-        padding: 10% 0 20% 0;
-    }
-    .section-six .end{
-        text-align: center;
-        padding: 4% 0;
-    }
-    .section-seven p{
-        padding-top: 20px;
-        font-size: 14px;
-    }
-    .section-seven h4{
-        font-size: 18px;
-        padding-top: 10px;
-    }
-    .section-seven ul li{
-        font-size: 13px;
+    /* Section Six */
+    .section-six-text{
+        width: 100%;
+        margin-top: 4em;
+        margin-left: 0;
         text-align: justify;
     }
+    .section-six-text h3{
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 22px;
+    }
+    .section-six-text p{
+        padding-top: 10px;
+        line-height: 32px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    #second-text p{
+        font-size: 20px;
+    }
+    .section-button{
+        margin-top: 2em;
+        margin-left: 10em;
+    }
+    /* Section Seven*/
+    .section-seven{
+        padding: 10px 0;
+    }
+    .section-seven h1{
+        padding: 25px 0;
+        font-size: 27px;
+    }
+    .section-seven img{
+        margin-top: 15%;
+        margin-bottom: 2%;
+    }
+    .choose-section{
+        width: 100%;
+    }
+    .choose-section h2{
+        text-align: center;
+        font-size: 22px;
+    }
+    .choose-section p{
+        font-size: 16px;
+    }
+    .choose-section .section-button{
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    /*Section Eight */
     .section-eight h3{
         font-size: 18px;
         margin: 20px 0;
     }
     .section-eight p{
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 30px;
     }
     .back, #next, #send{
-        margin-left: 10px;
+        margin-left: 0;
         width: 100%;
     }
     .section-eight span{
@@ -447,15 +624,74 @@ footer{
         text-align: left;
         padding: -25px 50px;
     }
-    .last-section .logo{
-        margin: 20px 0;
+    .footer-links p{
+        color: #fff;
+        opacity: 0.8;
+        font-size: 80%;
     }
-    .last-section h4{
-        font-size: 18px;
-        padding: 10px 0;
+    
+}
+@media screen and (max-width: 480px){
+    .section-one .heading-one{
+        font-size: 25px;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 2em;
+        line-break: normal;
     }
-    .last-section p{
-        font-size: 15px;
-        padding-top: 5px 0;
+    .section-one .section-image{
+        width: 300px;
+        margin-left: 3em;
+    }
+    .section-one .btn-2{
+        border-radius: 40px;
+        padding: 10px 25px;
+        margin-top: 5em;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .section-six-text h3{
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 22px;
+    }
+    .section-six-text p{
+        padding: 10px 5px 0 5px;
+        line-height: 32px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    #second-text p{
+        font-size: 16px;
+        padding: 10px 5px 0 5px;
+    }
+    .section-button{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .section-seven{
+        width: 100%;
+        height: 450px;
+        background: #E7F2FD;
+        padding: 5% 5px 5% 5px;
+    }
+    .section-seven h1{
+        padding: 25px 0;
+        font-size: 25px;
+    }
+    .section-seven img{
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    .choose-section p{
+        font-size: 13px;
+    }
+    .choose-section .section-button{
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    /* Section eight */
+    .footer-links span{
+        display: none;
     }
 }
