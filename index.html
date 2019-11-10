@@ -31,29 +31,53 @@
             </div>
         </nav>
     <!--First Section-->
-    <div class="section-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                        <h1 class="heading-one">We build solutions <br> that clients love</h1>
-                        <div class="header-display">
-                            <p class="one"><a href="#ssocial-media">Social Media Management</a>|<a href="#online-advert">Online Advertising</a>| <br><a href="#email">E-mail Marketing</a>|<a href="#website">Website Design</a>| <br><a href="#shopify">Shopify Partners</a>|<a href="#chart-bot">Chart Bot Marketing</a></p>
-                            </div>
-                            <img src="wilbrotech.png" alt="wilbrotech" class="img-fluid section-image">
-                            <a href="#contact"><button type="button" class="btn btn-2">Contact Us</button></a></p>
-                        
+    <div class="first-section">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" id="carou-one">
+                    <img src="showcase.jpg" alt="" class="img-fluid">
+                    <div class="carousel-caption">
+                        <h1>We build solutions that clients love</h1>
+                        <div id="caption-links">
+                            <p><a href="#social-media">Social Media Management</a><a href="#online-advert">Online Advertising</a></p>
+                            <p><a href="#email">E-mail Marketing</a><a href="#website">Website Design</a></p>
+                            <p><a href="#shopify">Shopify Partners</a><a href="#chart-bot">Chart Bot Marketing</a></p>
+                        </div>
+                        <p><a href="#contact"><button type="button" class="btn btn-2">Contact Us</button></a></p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="wilbrotech.png" alt="wilbrotech" class="img-fluid image">
+                <div class="carousel-item" id="carou-two">
+                    <img src="web1.jpg" alt=""  class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="wilbrotech-background.jpg" alt="" class="img-fluid">
+                    <div class="carousel-caption">
+                        <h1 id="quote">“Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road.”</h1>
+                    </div>
                 </div>
             </div>
+            
+        </div>
+        <div class="first-inner">
+            <h1>We build solutions that clients love</h1>
+                    <div id="caption-links">
+                        <p><a href="#social-media" id="mgt">Social Media Management</a><a href="#website">Web Design</a></p>
+                        <p><a href="#email">E-mail Marketing</a><a href="#online-advert">Online Advertising</a></p>
+                        <p><a href="#shopify">Shopify Partners</a><a href="#chart-bot">Chart Bot Marketing</a></p>
+                    </div>
+                    <p><a href="#contact"><button type="button" class="btn btn-2">Contact Us</button></a></p>
         </div>
     </div>
     <!--Section-one-->
 
 
     <!--Third Section-->
-    <div class="container-fluid">
+    <div class="container-fluid section-three">
         <div class="container text-center" id="section-three">
             <h2>What We Do</h2>
             <img src="under.PNG" alt="wilbrotech">
@@ -164,28 +188,44 @@
         <!--Section-five-->
     <div class="section-five">
         <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>We are driven by excellence <br> and solutions</h2>
-                        <p>We are techonolgy experts, leveraging on the right technology stack to get the job done. We strive to meet our customers need, demand and preference irrespective of the budget. We are Wilbrotech, count on us for quality online presence.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="wilbroimg6.png" alt="wilbro" width="600" class="img-fluid img1">
-                    </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>Let's Work Together & Make It Happen!</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="wilbroimg7.png" alt="wilbro" width="600" class="img-fluid img2">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <h2>Work with us and we would become part of your team</h2>
-                        <p>When you work with us, our team becomes part of your team. You will actively participate in the solution design process and experience our unique customer-centric approach.</p>
-                    </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-md">Contact Us Now</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="section-five">
+        <h2>Web development</h2>
+        <p class="text-center">Our skilled and experienced developers are well aware about the system architecture that can potentially engage customers.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="main-feature.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h4>Wordpress</h4>
+                <p>Our Exprience in the popular CMS will enable us give you the best, responsive and professional website you desire.</p>
+                <hr>
+                <h4>Wix</h4>
+                <p>Let us give you one of a kind Wix Website that will give you the power to unlock all potentials in your business. </p>
+                <hr>
+                <h4>Shopify</h4>
+                <p>Online! Avail the features of one of the best e-commerce platform with the help of our exceptional Exprience in Shopify.</p>
+                <hr>
+                <h4>From Scratch</h4>
+                <p>With our Exprience and knowlegde in HTML, CSS and JAVASCRIPT with other web development tools, we will ensure you have the professional website that your customers will love.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="link-container">
+                <a href="#contact"><button type="button" class="btn btn-primary section-button">Talk to Us<i class="fas fa-envelope pl-2"></i></button></a>
         </div>
     </div>
         <!--Section Six-->
-    <div class="container-fluid section-six" id="about">
+    <div class="container-fluid section-six first" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6">
@@ -204,19 +244,30 @@
                     <p>We strongly believe money in the first place has no value without us people. Thus, we must act as so by take good care of ourselves and everyone we can help within our organization. These are the values we stand behind, with our clients and their customers alike.</p>
                     <p>A multi-talented team of driven individuals always seeking to optimize each and every part & component of every client's marketing strategy. We believe cohesion, good communication and laser focused targeting are the key ingredients for our team to deliver the best result every single time for any and all marketing related challenges we may encounter while your business succeed.</p>
                     <p>Get in touch with our team today to grow your business online!</p>
-                    <a href="#contact"><button type="button" class="btn btn-primary section-button">TALK TO US</button></a>
+                    <a href="#contact"><button type="button" class="btn btn-primary section-button" id="section-button">TALK TO US</button></a>
+                </div>
+                <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 10s linear infinite; opacity: 1; z-index: 10;"> 
+                </div>
+                <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 15s linear infinite; opacity: .75; z-index: 11;"> 
+                </div>
+                <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 20s linear infinite; opacity: .5; z-index: 12;"> 
                 </div>
             </div>
         </div>
     </div>
     <!--Section Seven-->
-    <div class="container-fluid section-seven">
-        <div class="container">
+    <div class="container-fluid section-seven first">
             <div class="row justify-content-center text-center">
                 <h1>Platforms & Media Channels</h1>
                 <div class="col-md-12">
                     <img src="social-media-platforms.png" class="img-fluid" alt="wilbro-tech-social-media-platforms">
                 </div>
+            
+            <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 10s linear infinite; opacity: 1; z-index: 10;"> 
+            </div>
+            <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 15s linear infinite; opacity: .75; z-index: 11;"> 
+            </div>
+            <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 20s linear infinite; opacity: .5; z-index: 12;"> 
             </div>
         </div>
     </div>
@@ -290,7 +341,7 @@
                     <a href="#">Privacy Policy</a>
                     ::<a href="#">Terms & Conditions</a>
                 </p>
-                <p class="copy">Copyright &copy; 2019 WilbroTech <span>•Web Designer & Developer</span></p>
+                <p class="copy">Copyright &copy; 2019 WilbroTech</p>
             </div>
         </div>
     </footer>
@@ -317,10 +368,13 @@
 
     <script>
 
-        window.sr = ScrollReveal( {duration: 1000} );
+        window.sr = ScrollReveal( {duration: 2000} );
         sr.reveal('.section-one .col-md-6');
         sr.reveal('#section-three .card');
-        sr.reveal('.section-five .col-md-6');
+        sr.reveal('.section-five .col-md-9');
+        sr.reveal('.section-five .col-md-3');
+        sr.reveal('.section-button');
+        sr.reveal('#section-five .col-md-6');
         sr.reveal('.section-six .col-md-6');
         sr.reveal('.section-seven h1');
         sr.reveal('.section-seven img');
@@ -329,6 +383,8 @@
         sr.reveal('.section-eight h3');
         sr.reveal('.section-eight p');
         sr.reveal('.section-eight .col-md-6');
+        sr.reveal('.footer-section a');
+        sr.reveal('.footer-section p');
     </script>
 </body>
 </html>
