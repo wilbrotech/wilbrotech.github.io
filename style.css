@@ -80,6 +80,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
+.nav-link .active{
+    color: black;
+}
 .nav-link .nav-item:hover{
     color: #00B4F8;
 }
