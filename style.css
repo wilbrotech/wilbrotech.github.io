@@ -98,6 +98,14 @@ a{
     padding-bottom: 3%;
     text-shadow: 3px 5px rgba(0, 0, 0, 0.748);
 }
+.carousel-item #carousel-quote{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+}
+.carousel-item #carousel-quote h3{
+    line-height: 1.6;
+}
 .carousel-caption #quote{
     text-shadow: 3px 5px rgba(0, 0, 0, 0.748);
 }
@@ -372,7 +380,7 @@ textarea:focus{
     width: 70%;
     height: 70%;
 }
-/* Portfolio Section */
+/*Slider Portfolio Section */
 #portfolio img{
     margin: 0 auto;
 }
@@ -389,7 +397,7 @@ textarea:focus{
     padding:20px;
     color:white;
 }
-img{
+.slider img{
       display: block;
       padding: 0 5px;
       margin-bottom: 10px;
@@ -885,6 +893,12 @@ footer{
     }
     /* Main Portfolio */
     #main-portfolio h1{
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.659);
+    }
+    #main-portfolio h6{
+        text-shadow: 1px 2px rgba(0, 0, 0, 0.537);
+    }
+    #main-portfolio h1{
         font-size: 23px;
     }
     #main-portfolio h6{
@@ -893,6 +907,9 @@ footer{
     #main-portfolio p{
         font-size: 35px;
     }
+    /* Slide Porfolio section */
+    
+    /* slide portfolio */
     .section-five{
         text-align: center;
     }
@@ -971,6 +988,18 @@ footer{
     .choose-section .section-button{
         text-align: center;
         margin-bottom: 3em;
+    }
+    /*Slider Portfolio Section */
+
+    .slider img{
+      display: block;
+      padding: 0 5px;
+      margin-bottom: 10px;
+      height: 80px;
+      width: 100px;
+    }
+    .content .content-overlay, .content .content-details{
+        display: none;
     }
     /* Portfolio */
     #portfolio{
