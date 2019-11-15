@@ -324,6 +324,21 @@ textarea:focus{
     font-weight: bold;
     padding-top: 3%;
 }
+.dot{
+    text-align: center;
+}
+.head-line{
+    width: 150px;
+}
+.dot i{
+    text-align: center;
+    display: block;
+    position: relative;
+    top: -25px;
+    margin: 0 auto;
+    color: #FBCA17;
+    font-size: 18px;
+  }
 #section-five .text-center{
     padding-bottom: 4%;
 }
@@ -444,7 +459,6 @@ textarea:focus{
     border-bottom: 3px dotted white;
 }
 #main-portfolio h1{
-    padding-bottom: 2%;
     color: #fff;
     font-weight: bold;
     text-shadow: 3px 5px rgba(0, 0, 0, 0.748);
@@ -456,7 +470,7 @@ textarea:focus{
 }
 #main-portfolio p{
     font-size: 45px;
-    color: green;
+    color: #FBCA17;
 }
 #port-section{
     padding: 3% 8%;
@@ -499,7 +513,6 @@ textarea:focus{
 #port-section .content-details {
     position: absolute;
     text-align: center;
-    
     width: 100%;
     top: 50%;
     left: 50%;
