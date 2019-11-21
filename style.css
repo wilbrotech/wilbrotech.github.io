@@ -838,7 +838,10 @@ footer{
         display: inline-block;
         text-align: center;
     }
-    
+    /* Wave */
+    .wave{
+        display: none;
+    }
 }
 @media screen and (max-width:340px){
     .first-inner{
