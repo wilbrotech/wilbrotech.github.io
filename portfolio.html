@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/aos.css" type="text/css">
     <title>WilbroTech</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
@@ -34,14 +35,14 @@
     
     <!-- Portfolio Section -->
     <div class="container-fluid text-center" id="main-portfolio">
-       <h1>Our Portfolio</h1>
+       <h1 data-aos="zoom-in" data-aos-duaration="600">Our Portfolio</h1>
        <hr class="head-line">
         <p class="dot"><i class="fas fa-dot-circle"></i></p>
-       <h6>The growth of online users and consumption of digital content has made it important for every business, organization, company and institution wether big or small to have a website, promote your business online with great, compelling and attrative content. A representation on the internet to share your story, promote your business, engage customers and increase profit.</h6>
-       <h6>At WilbroTech, we believe your website and online presence should be everything that will represent you on online, what should make your customers, client and consumers always come back for more!!</h6>
-       <h6>Together with you and your customers, we will ensure you get the best!!</h6>
-       <h6>These are Companies we are helping reach their goals...</h6>
-       <p><i class="fas fa-arrow-circle-down"></i> <i class="fas fa-arrow-circle-down"></i></p>
+       <h6 data-aos="zoom-in" data-aos-duaration="600">The growth of online users and consumption of digital content has made it important for every business, organization, company and institution wether big or small to have a website, promote your business online with great, compelling and attrative content. A representation on the internet to share your story, promote your business, engage customers and increase profit.</h6>
+       <h6 data-aos="zoom-in" data-aos-duaration="600">At WilbroTech, we believe your website and online presence should be everything that will represent you on online, what should make your customers, client and consumers always come back for more!!</h6>
+       <h6 data-aos="zoom-in" data-aos-duaration="600">Together with you and your customers, we will ensure you get the best!!</h6>
+       <h6 data-aos="zoom-in" data-aos-duaration="600">These are Companies we are helping reach their goals...</h6>
+       <p data-aos="zoom-in" data-aos-duaration="600"><i class="fas fa-arrow-circle-down"></i> <i class="fas fa-arrow-circle-down"></i></p>
     </div>
     <div class="container text-center" id="port-section">
         <div class="row mt-5">
@@ -64,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <a href="#contact"><button type="button" class="btn btn-primary section-button">Talk to Us Now<i class="fas fa-envelope pl-2"></i></button></a>
+        <a href="#contact"><button type="button" class="btn btn-primary section-button" data-aos="zoom-in" data-aos-duaration="600">Talk to Us Now<i class="fas fa-envelope pl-2"></i></button></a>
     </div>
     <!--Section Eight-->
     <div class="container-fluid justify-content-center text-center section-eight" id="contact">
@@ -102,11 +103,13 @@
     <!--Footer Section-->
     <footer>
         <div class="container text-center footer-section">
-            <a href="https://web.facebook.com/WilbroTech-2315447788698768/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook-f"></i></a> 
-            <a href="https://twitter.com/TechWilbro"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/wilbro_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <div class="footer-links">
+            <div data-aos="zoom-in" data-aos-duaration="600">
+                <a href="https://web.facebook.com/WilbroTech-2315447788698768/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                <a href="https://twitter.com/TechWilbro"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/wilbro_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links" data-aos="zoom-in" data-aos-duaration="600" data-aos-delay="200">
                 <p>
                     <a href="index.html">Home</a>
                     ::<a href="portfolio.html">Portfolio</a>
@@ -128,35 +131,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Change navbar background-color on scroll-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".navbar-toggler").click(function(){
-                $(".navbar-toggler").toggleClass("toggle");
-            });
-        });
-    </script>
-    <!-- Slick -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/aos.js"></script>
+
     
-    <!-- Slick -->
+    <!-- AOS -->
     <script>
-        $(window).scroll(function(){
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-        });
+        AOS.init();
     </script>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script>
-
-        window.sr = ScrollReveal( {duration: 1500} );
-        sr.reveal('.choose-us .choose-section');
-        sr.reveal('.choose-us img');
-        sr.reveal('.section-eight h3');
-        sr.reveal('.section-eight p');
-        sr.reveal('.section-eight .col-md-6');
-        sr.reveal('.footer-section a');
-        sr.reveal('.footer-section p');
-    </script>
+    
+  
 </body>
 </html>

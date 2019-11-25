@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/aos.css">
     <title>WilbroTech</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
@@ -44,26 +44,26 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" id="carou-one">
-                    <img src="showcase.jpg" alt="" class="img-fluid">
+                    <img src="img/wilbrotech-image.jpg" alt="" class="img-fluid">
                     <div class="carousel-caption">
                         <h1>We build solutions that clients love</h1>
                         <div id="caption-links">
                             <p><a href="#social-media">Social Media Management</a><a href="#website">Website Design</a></p>
-                            <p><a href="#online-advert">Online Advertising</a><a href="#email">E-mail Marketing</a></p>
-                            <p><a href="#shopify">Shopify Partners</a><a href="#chart-bot">Chart Bot Marketing</a></p>
+                            <p><a href="#online-advert">Online Advertising</a><a href="#email">Graphic Design</a></p>
+                            <p><a href="#shopify">Shopify Partners</a><a href="#chart-bot">Content Creation</a></p>
                         </div>
-                        <p><a href="#contact"><button type="button" class="btn btn-2">Contact Us</button></a></p>
+                        <p><a href="#contact"><button type="button" class="btn btn-primary section-button">Talk to Us Now<i class="fas fa-envelope pl-2"></i></button></a></p>
                     </div>
                 </div>
                 <div class="carousel-item" id="carou-two">
-                    <img src="wilbrocode.jpg" alt=""  class="img-fluid">
+                    <img src="img/wilbrocode.jpg" alt=""  class="img-fluid">
                     <div class="carousel-caption" id="carousel-quote">
                         <h3>“At WilbroTech, we believe your website and online presence should be everything that will represent you on online, what should make your customers, client and consumers always come back for more!!”</h3>
                         <p>-<a href="#">William Amon</a>, CTO</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="wilbrotech-background.jpg" alt="" class="img-fluid">
+                    <img src="showcase.jpg" alt="" class="img-fluid">
                     <div class="carousel-caption">
                         <h1 id="quote">“Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road.”</h1>
                     </div>
@@ -78,7 +78,8 @@
                         <p><a href="#email">E-mail Marketing</a><a href="#online-advert">Online Advertising</a></p>
                         <p><a href="#shopify">Shopify Partners</a><a href="#chart-bot">Chart Bot Marketing</a></p>
                     </div>
-                    <p><a href="#contact"><button type="button" class="btn btn-2">Contact Us</button></a></p>
+                    <p><a href="#contact"><button type="button" class="btn btn-primary section-button" data-aos="zoom-in" data-aos-duaration="500">Talk to Us<i class="fas fa-envelope pl-2"></i></button></a></p>
+                    
         </div>
     </div>
     <!--Section-one-->
@@ -87,15 +88,15 @@
     <!--Third Section-->
     <div class="container-fluid section-three">
         <div class="container text-center" id="section-three">
-            <h2>What We Do</h2>
+            <h2>Our Services</h2>
             <hr class="head-line">
             <p class="dot"><i class="fas fa-dot-circle"></i></p>
             <div class="row text-center what-we-do">
                 <div class="col-md-4" id="website">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duaration="400">
                         <div class="content">
                             <div class="content-overlay"></div>
-                                <img src="web-design-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
+                                <img src="img/web-design-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
                             <div class="card-body">
                                 <h5 class="card-title">Website Design</h5>
                                     <a href="#">Learn More</a>
@@ -108,10 +109,10 @@
                     </div>
                 </div>
                 <div class="col-md-4" id="social-media">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duaration="400">
                     <div class="content">
                         <div class="content-overlay"></div>
-                        <img src="social-media-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
+                        <img src="img/social-media-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
                         <div class="card-body">
                             <h5 class="card-title">Social Media Management</h5>
                             <a href="#">Learn More</a>
@@ -124,10 +125,10 @@
                     </div>
                 </div>
                 <div class="col-md-4" id="online-advert">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duaration="400">
                         <div class="content">
                             <div class="content-overlay"></div>
-                            <img src="advertising-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
+                            <img src="img/advertising-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
                             <div class="card-body">
                                 <h5 class="card-title">Online Advertising</h5>
                                 <a href="#">Learn More</a>
@@ -142,26 +143,26 @@
             </div>
             <div class="row text-center what-we-do">
                 <div class="col-md-4" id="email">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duaration="400">
                         <div class="content">
                             <div class="content-overlay"></div>
-                                <img src="email-marketing-ico.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
+                                <img src="img/graphic-designing.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
                                 <div class="card-body">
-                                    <h5 class="card-title">Email Marketing</h5>
+                                    <h5 class="card-title">Graphic Design</h5>
                                     <a href="#">Learn More</a>
                                 </div>
                                 <div class="content-details fadeIn-top text-center">
-                                    <p>Easily the most effective and cost efficient marketing method, let out team of experts create compelling emails that get high open rates, click through rates and conversion rates.</p>
+                                    <p>Easily the most effective and cost efficient marketing tool, let out team of experts create compelling graphics that get high open rates, click through rates and conversion rates.</p>
                                     <a href="#contact"><button type="button" class="btn btn-primary">Get Started</button></a>
                                 </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4" id="shopify">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duaration="400">
                         <div class="content">
                             <div class="content-overlay"></div>
-                            <img src="e_commerce.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
+                            <img src="img/e_commerce.svg" class="card-img-top img-fluid" alt="Social Media Management" title="Social Media Management">
                             <div class="card-body">
                                 <h5 class="card-title">Shopify Partners</h5>
                                 <a href="#">Learn More</a>
@@ -174,22 +175,23 @@
                     </div>
                 </div>
                 <div class="col-md-4" id="chart-bot">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duaration="400">
                         <div class="content">
                             <div class="content-overlay"></div>
-                            <img src="chart-bot.png" class="card-img-top img-fluid chart" alt="Social Media Management" title="Social Media Management">
+                            <img src="img/content_creation.svg" class="card-img-top img-fluid chart" alt="Social Media Management" title="Social Media Management">
                             <div class="card-body">
-                                <h5 class="card-title">Chart Bot Marketing</h5>
+                                <h5 class="card-title">Content Creation</h5>
                                 <a href="#">Learn More</a>
                             </div>
                             <div class="content-details fadeIn-top text-center">
-                                <p>When it comes to communication on the internet, every second matters and affects opportunity cost. Get our team to design smart live chat series to funnel your chats at scale.</p>
+                                <p>People react to images and video that are stimulating, relatable and contain a clear message; our team has the expertise to produce this type of content time and time again.</p>
                                 <a href="#contact"><button type="button" class="btn btn-primary">Get Started</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <p><a href="#contact"><button type="button" class="btn btn-primary section-button" data-aos="zoom-in" data-aos-duaration="500">View All Services<i class="fas fa-calendar-week pl-2"></i></button></a></p>
         </div>
     <!--Section four-->
     
@@ -197,7 +199,7 @@
         <!--Section-five-->
     <div class="section-five">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="ease-out" data-aos-duaration="400">
                 <div class="col-md-9">
                     <h2>Let's Work Together & Make It Happen!</h2>
                 </div>
@@ -211,80 +213,138 @@
         <h2>Web development</h2>
         <hr class="head-line">
         <p class="dot"><i class="fas fa-dot-circle"></i></p>
-        <p class="text-center">Our skilled and experienced developers are well aware about the system architecture that can potentially engage customers.</p>
+        <p class="text-center" data-aos="zoom-in" data-aos-duaration="500">Our skilled and experienced developers are well aware about the system architecture that can potentially engage customers.</p>
         <div class="row">
             <div class="col-md-6">
                 <img src="main-feature.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-6">
                 <h4>Wordpress</h4>
-                <p>Our Exprience in the popular CMS will enable us give you the best, responsive and professional website you desire.</p>
+                <p data-aos="zoom-in" data-aos-duaration="500">Our Exprience in the popular CMS will enable us give you the best, responsive and professional website you desire.</p>
                 <hr>
                 <h4>Wix</h4>
-                <p>Let us give you one of a kind Wix Website that will give you the power to unlock all potentials in your business. </p>
+                <p data-aos="zoom-in" data-aos-duaration="500">Let us give you one of a kind Wix Website that will give you the power to unlock all potentials in your business. </p>
                 <hr>
                 <h4>Shopify</h4>
-                <p>Online! Avail the features of one of the best e-commerce platform with the help of our exceptional Exprience in Shopify.</p>
+                <p data-aos="zoom-in" data-aos-duaration="500">Online! Avail the features of one of the best e-commerce platform with the help of our exceptional Exprience in Shopify.</p>
                 <hr>
-                <h4>From Scratch</h4>
-                <p>With our Exprience and knowlegde in HTML, CSS and JAVASCRIPT with other web development tools, we will ensure you have the professional website that your customers will love.</p>
+                <h4>Custom Design</h4>
+                <p data-aos="zoom-in" data-aos-duaration="500">With our Exprience and knowlegde in HTML, CSS and JAVASCRIPT with other web development tools, we will ensure you have the professional website that your customers will love.</p>
                 <hr>
             </div>
         </div>
         <div class="link-container">
-                <a href="#contact"><button type="button" class="btn btn-primary section-button">Talk to Us<i class="fas fa-envelope pl-2"></i></button></a>
+                <a href="#contact"><button type="button" class="btn btn-primary section-button"
+                    data-aos="zoom-in" data-aos-duaration="500">Talk to Us<i class="fas fa-envelope pl-2"></i></button></a>
         </div>
     </div>
         <!--Section Six-->
-    <div class="container-fluid section-six first" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
-                    <div>
-                        <img src="celebration.svg" class="img-fluid" alt="about-wilbrotech" title="about-wilbrotech">
+    
+        <div class="text-center mt-5">
+            <h1 data-aos="zoom-in" data-aos-duaration="500">About Us</h1>
+            <hr class="head-line">
+            <p class="dot"><i class="fas fa-dot-circle"></i></p>
+        </div>
+        <div class="container-fluid pb-5" id="section-six">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 image-responsive">
+                        <img src="img/about-wilbrotech.jpg" alt="" title="About Wilbrotech" class="img-fluid">
+                    </div>
+                    <div class="col-md-6" id="text">
+                        <h6><a href="about.html"><strong class="text-primary">WilbroTech</strong></a> is a technology hub and professional services firm that provides Webdesign, Web development, E-commerce, Digital Marketing, Social Media Management, Graphics Design, Content Creation and other technology services.</h6>
+                        <h6 class="pt-3"><a href="about.html"><strong class="text-primary">Our Mission</strong></a> is to help companies solve problems with the right strategy, design, and technology. We have a deep passion for helping clients build beautiful modern products and solutions to increase sales and profits!!</h6>
+                        <h6 class="pt-3"><a href="about.html"><strong class="text-primary">Our Vision</strong></a> is to be the most reliable partner for all web and technology solutions, give our <strong>Clients</strong> and <strong>Customers</strong> the best value for money and together create memorable experiences on the internet.!!</h6>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6">
-                    <div class="section-six-text">
-                        <h3>About Wilbrotech</h3>
-                        <p>WilbroTech is a technology hub and professional services firm that provides Webdesign, Web development, E-commerce, Digital Marketing, Social Media Management, Graphics Design and other technology services.</p>
-                        <p>Our mission is to help companies solve problems with the right strategy, design, and technology. We have a deep passion for helping clients build beautiful modern products and solutions to increase sales and profits!!</p>
-                    </div>
-                </div>
-                <div class="col-md-12" id="second-text">
-                    <p>We strongly believe money in the first place has no value without us people. Thus, we must act as so by take good care of ourselves and everyone we can help within our organization. These are the values we stand behind, with our clients and their customers alike.</p>
-                    <p>A multi-talented team of driven individuals always seeking to optimize each and every part & component of every client's marketing strategy. We believe cohesion, good communication and laser focused targeting are the key ingredients for our team to deliver the best result every single time for any and all marketing related challenges we may encounter while your business succeed.</p>
-                    <p>Get in touch with our team today to grow your business online!</p>
-                    <a href="#contact"><button type="button" class="btn btn-primary section-button" id="section-button">TALK TO US</button></a>
-                </div>
-                <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 4s linear infinite; opacity: 1; z-index: 10;"> 
-                </div>
-                <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 6s linear infinite; opacity: .75; z-index: 11;"> 
-                </div>
-                <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 8s linear infinite; opacity: .5; z-index: 12;"> 
-                </div>
+                <p class="text-center mt-5"><a href="#contact"><button type="button" class="btn btn-primary section-button" data-aos="zoom-in" data-aos-duaration="500">Learn More<i class="far fa-address-card pl-2"></i></button></a></p>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <hr>
+        </div>
+       
     <!--Section Seven-->
-    <div class="container-fluid section-seven first">
-            <div class="row justify-content-center text-center">
-                <h1>Platforms & Media Channels</h1>
-                <div class="col-md-12">
-                    <img src="social-media-platforms.png" class="img-fluid" alt="wilbro-tech-social-media-platforms">
+    <div class="container-fluid section-seven">
+            <div class="text-center mt-5">
+                <h1 data-aos="slide-down" data-aos-duaration="500" data-aos="zoom-in" data-aos-duaration="500">Apps & Platforms</h1>
+                <hr class="head-line">
+                <p class="dot"><i class="fas fa-dot-circle"></i></p>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="500">
+                        <img src="img/wordpress-logo.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-            
-            <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 4s linear infinite; opacity: 1; z-index: 10;"> 
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="400" data-aos-delay="250">
+                        <img src="img/shopify-logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="400" data-aos-delay="500">
+                        <img src="img/wix-logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="400" data-aos-delay="750">
+                        <img src="img/photoshop.png" alt="" class="img-fluid">
+                    </div>
+                </div>
             </div>
-            <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 6s linear infinite; opacity: .75; z-index: 11;"> 
+        
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="500">
+                        <img src="img/facebook-ads-logo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="500" data-aos-delay="250">
+                         <img src="img/googleads.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" id="instagram" data-aos="flip-left" data-aos-duaration="500" data-aos-delay="500">
+                        <img src="img/instagram.png" alt="" class="img-fluid">
+                     </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" data-aos="flip-left" data-aos-duaration="500" data-aos-delay="750">
+                        <img src="img/pinterest.png" alt="" class="img-fluid">
+                    </div>
+                </div>
             </div>
-            <div class="wave" style="background-image: url('waves.png'); background-size: 50% 75px; animation: waves 8s linear infinite; opacity: .5; z-index: 12;"> 
-            </div>
+
+            <div class="row mt-3 mb-2">
+                    <div class="col-md-3">
+                        <div class="card" data-aos="flip-left" data-aos-duaration="500">
+                            <img src="img/youtube.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" data-aos="flip-left" data-aos-duaration="500" data-aos-delay="250">
+                             <img src="img/twitter.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" data-aos="flip-left" data-aos-duaration="400" data-aos-delay="500">
+                            <img src="img/linkedin.png" alt="" class="img-fluid">
+                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" data-aos="flip-left" data-aos-duaration="400" data-aos-delay="750">
+                            <img src="img/stripe.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
     <!-- Slider Portfolio Section -->
     <div class="container-fluid text-center" id="portfolio">
-            <h1>Our Portfolio</h1>
+            <h1 data-aos="zoom-in" data-aos-duaration="500">Our Portfolio</h1>
             <hr class="head-line">
             <p class="dot"><i class="fas fa-dot-circle"></i></p>
         <div class="slider">
@@ -331,24 +391,30 @@
             >
         </div>
         <div class="link-container">
-                <a href="portfolio.html"><button type="button" class="btn btn-primary section-button">View Portfolio</button></a>
+                <a href="portfolio.html"><button type="button" class="btn btn-primary section-button"
+                    data-aos="zoom-in" data-aos-duaration="500">View Portfolio</button></a>
         </div>
     </div>
     <!--Section Seven two-->
     <div class="container">
+        <div class="text-center mt-5">
+                <h2 data-aos="zoom-in" data-aos-duaration="600">Why Choose US</h2>
+                <hr class="head-line">
+                <p class="dot"><i class="fas fa-dot-circle"></i></p>
+        </div>
         <div class="row choose-us">
             <div class="col-md-6">
                 <div class="choose-section">
-                    <h2>Why Choose Us</h2>
-                    <p><i class="fas fa-check"></i>We are thorough and detail oriented.</p>
-                    <p><i class="fas fa-check"></i>We truly care about your end user.</p>
-                    <p><i class="fas fa-check"></i>Your success is our success.</p>
-                    <p><i class="fas fa-check"></i>We follow the data and double down on what works!!</p>
+                    <p data-aos="zoom-in" data-aos-duaration="600"><i class="fas fa-check"></i>We are thorough and detail oriented.</p>
+                    <p data-aos="zoom-in" data-aos-duaration="600"><i class="fas fa-check"></i>We truly care about your end user.</p>
+                    <p data-aos="zoom-in" data-aos-duaration="600"><i class="fas fa-check"></i>Your success is our success.</p>
+                    <p data-aos="zoom-in" data-aos-duaration="600"><i class="fas fa-check"></i>We follow the data and double down on what works!!</p>
+                    <p data-aos="zoom-in" data-aos-duaration="600"><i class="fas fa-check"></i>We have the requisite knowledge, tools and resources!!</p>
                     <a href="#contact"><button type="button" class="btn btn-primary section-button">GET STARTED</button></a>
                 </div>         
             </div>
-            <div class="col-md-6">
-                <img src="business_deal.svg" class="img-fluid" alt="Why choose Us" title="why choose wilbrotech">
+            <div class="col-md-6 image-responsive">
+                <img src="img/choose.jpg" class="img-fluid" alt="Why choose Us" title="choose wilbrotech">
             </div>
         </div>
     </div>
@@ -388,11 +454,13 @@
     <!--Footer Section-->
     <footer>
         <div class="container text-center footer-section">
+            <div data-aos="zoom-in" data-aos-duaration="600">
             <a href="https://web.facebook.com/WilbroTech-2315447788698768/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook-f"></i></a> 
             <a href="https://twitter.com/TechWilbro"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/wilbro_tech/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <div class="footer-links">
+            </div>
+            <div class="footer-links" data-aos="zoom-in" data-aos-duaration="600">
                 <p>
                     <a href="#">Home</a>
                     ::<a href="#">Portfolio</a>
@@ -416,57 +484,15 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
-    <!-- Change navbar background-color on scroll-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".navbar-toggler").click(function(){
-                $(".navbar-toggler").toggleClass("toggle");
-            });
-        });
-    </script>
-    <!-- Slick -->
-    <script type="text/javascript">
-        window.onload=function(){
-      $('.slider').slick({
-      autoplay:true,
-      autoplaySpeed:1500,
-      arrows:true,
-      prevArrow:'<button type="button" class="slick-prev"></button>',
-      nextArrow:'<button type="button" class="slick-next"></button>',
-      centerMode:true,
-      slidesToShow:3,
-      slidesToScroll:1
-      });
-    };
-    
-      </script>
-    <!-- Slick -->
-    <script>
-        $(window).scroll(function(){
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/aos.js"></script>
 
     
+    <!-- AOS -->
     <script>
-
-        window.sr = ScrollReveal( {duration: 1500} );
-        sr.reveal('.section-one .col-md-6');
-        sr.reveal('#section-three .card');
-        sr.reveal('.section-five .col-md-9');
-        sr.reveal('.section-five .col-md-3');
-        sr.reveal('.section-button');
-        sr.reveal('#section-five .col-md-6');
-        sr.reveal('.section-six .col-md-6');
-        sr.reveal('.section-seven h1');
-        sr.reveal('.section-seven img');
-        sr.reveal('.choose-us .choose-section');
-        sr.reveal('.choose-us img');
-        sr.reveal('.section-eight h3');
-        sr.reveal('.section-eight p');
-        sr.reveal('.section-eight .col-md-6');
-        sr.reveal('.footer-section a');
-        sr.reveal('.footer-section p');
+        AOS.init();
     </script>
+
 </body>
 </html>

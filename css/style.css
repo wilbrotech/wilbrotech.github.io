@@ -57,11 +57,11 @@ a{
 
 .navbar-light{
     width: 100%;
-    background: linear-gradient(to right, #03D8F5, #1D42DE);
+    background: linear-gradient(to right, rgba(3, 217, 245, 0.809), rgba(29, 68, 222, 0.836));
     padding: 10px;
 }
 .navbar-light.scrolled{
-    background: linear-gradient(to right, #1D42DE, #03D8F5);
+    background: linear-gradient(to right, rgb(29, 68, 222), rgb(3, 217, 245));
 }
 .container .navbar-brand{
     color: #fff;
@@ -90,7 +90,12 @@ a{
     padding-bottom: 3.5%;
 }
 .carousel-item{
-    height: 500px;
+    height: 550px;
+}
+.carousel-inner #carou-one{
+    background-size: cover;
+    background-color: #00B4F8;
+    background-blend-mode: overlay;
 }
 .carousel-caption h1{
     font-size: 55px;
@@ -99,15 +104,21 @@ a{
     text-shadow: 3px 5px rgba(0, 0, 0, 0.748);
 }
 .carousel-item #carousel-quote{
-    width: 50%;
+    width: 45%;
     position: absolute;
     top: 20%;
+    left: 5%;
 }
 .carousel-item #carousel-quote h3{
     line-height: 1.6;
+    text-align: justify;
+
+}
+.carousel-item #carousel-quote p{
+    text-align: left;
 }
 .carousel-caption #quote{
-    text-shadow: 3px 5px rgba(0, 0, 0, 0.748);
+   
 }
 #caption-links p{
     margin-bottom: 40px;
@@ -118,8 +129,9 @@ a{
     color: #fff;
     font-size: 16px;
     padding: 10px 25px;
-    border: 1px solid rgba(255, 187, 0, 0.795);
+    border: 2px solid rgba(255, 187, 0, 0.795);
     border-radius: 12px;
+    font-weight: bold;
 }
 
 #caption-links a:hover{
@@ -131,7 +143,7 @@ a{
 }
 .btn-2{
     border-radius: 30px;
-    border: none;
+    border: 1px solid rgba(255, 187, 0, 0.795);
     color: #fff;
     background-color: #1F60D7;
     padding: 10px 35px;
@@ -192,7 +204,7 @@ textarea:focus{
     margin: 0 auto;
 }
 #section-three{
-    margin-top: 7%;
+    margin-top: 5%;
 }
 #section-three h2{
     padding-bottom: 0;
@@ -206,8 +218,6 @@ textarea:focus{
     margin: 4% 0;
 }
 #section-three .card{
-    background-color: rgb(236, 244, 251);
-    border: none;
     border-radius: 5px;
     -webkit-box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
     -moz-box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
@@ -312,7 +322,7 @@ textarea:focus{
     color: #fff;
 }
 #section-five{
-    background: url('mac.png');
+    background: url('../img/mac.png');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -355,45 +365,42 @@ textarea:focus{
     border-radius: 20px;
 }
 /* Section Six */
-.section-six{
-    background-color: #F5F9FD;
-    margin: 5% 0;
-    padding: 5% 0 7% 0; 
-}
-.section-six-text{
-    margin-left: 4em;
+#section-six .col-md-6 h6{
+    padding-left: 3%;
     text-align: justify;
+    line-height: 1.7;
+    
 }
-.section-six-text h3{
-    font-weight: bold;
-    padding-bottom: 15px;
+#section-six .col-md-6 img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
 }
-.section-six-text p{
-    padding-top: 10px;
-    line-height: 32px;
-    font-size: 14px;
-}
-.section-six #second-text{
-    margin-top: 10px;
-    padding-top: 10px;
-    line-height: 32px;
-    font-size: 14px;
-    text-align: justify;
+#section-six .col-md-6 img:hover{
+    -webkit-box-shadow: -1px 6px 6px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 6px 6px 0px rgba(0,0,0,0.45);
+    box-shadow: -1px 6px 6px 0px rgba(0,0,0,0.45);
 }
 /* Section Seven */
-.section-seven{
-    width: 100%;
-    height: 700px;
-    background: #E7F2FD;
-    padding: 5% 5px 10% 5px;
+.section-seven .card{
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
+    -moz-box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
+    box-shadow: -1px 5px 20px -10px rgba(148,146,148,1);
 }
-
-.section-seven img{
+.section-seven .card img{
     margin: 0 auto;
-    padding-bottom: 4%;
-    padding-top: 4%;
-    width: 70%;
-    height: 70%;
+    width: 200px;
+    height: 200px;
+}
+.section-seven .card:hover{
+    -webkit-box-shadow: -1px 2px 5px 1px rgba(135,128,135,1);
+    -moz-box-shadow: -1px 2px 5px 1px rgba(135,128,135,1);
+    box-shadow: -1px 2px 5px 1px rgba(135,128,135,1);
+}
+.section-seven #instagram img{
+    padding-top: 15px;
 }
 /*Slider Portfolio Section */
 #portfolio img{
@@ -421,8 +428,8 @@ textarea:focus{
     margin-top: 5%;
 }
 .choose-us{
-    padding: 5% 5px;
-    margin: 3% 0;
+    padding-bottom: 4%;
+    margin: 0 0 4% 0;
 }
 .choose-section{
     padding-top: 6%;
@@ -439,6 +446,18 @@ textarea:focus{
     color: #04D7F5;
     padding-right: 10px;
 }
+.choose-us img{
+    border: 1px dotted yellow;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 3px;
+}
+.choose-us img:hover{
+    -webkit-box-shadow: -1px 6px 6px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 6px 6px 0px rgba(0,0,0,0.45);
+    box-shadow: -1px 6px 6px 0px rgba(0,0,0,0.45);
+}
 .section-button{
     margin-top: 10px;
     border-radius: 25px;
@@ -449,9 +468,15 @@ textarea:focus{
     -moz-box-shadow: -1px 5px 20px -10px rgba(13,170,227,1);
     box-shadow: -1px 5px 20px -10px rgba(13,170,227,1);
 }
+.section-button:hover{
+    background: transparent;
+    color: black;
+    transition: 0.4s;
+    font-weight: bold;
+}
 /* Main Portfolio */
 #main-portfolio{
-    background: url('mac.png');
+    background: url('../img/mac.png');
     background-blend-mode: overlay;
     background-size: cover;
     background-attachment: fixed;
@@ -734,13 +759,12 @@ footer{
         font-size: 16px;
         margin-left: 18px;
     }
-    .section-six h3{
-        font-size: 25px;
-        font-weight: bold;
-        margin-left: 17%;
-    }
     .section-five .img1{
         display: none;
+    }
+    /* #Section-five */
+    #section-five h2{
+        padding-top: 4%;
     }
     footer{
         text-align: center;
@@ -750,44 +774,26 @@ footer{
         padding: 5% 8%;
     }
     /* Section Six */
-    .section-six-text{
-        width: 100%;
-        margin-top: 4em;
-        margin-left: 0;
-        text-align: justify;
+    #section-six #text{
+        padding-top: 7%;
     }
     #section-button{
         margin-bottom: 25px;
-    }
-    .section-six-text h3{
-        font-size: 30px;
-        font-weight: bold;
-        padding-bottom: 22px;
-    }
-    .section-six-text p{
-        padding-top: 10px;
-        line-height: 32px;
-        font-size: 20px;
-        text-align: justify;
     }
     #second-text p{
         font-size: 20px;
     }
     .section-button{
-        margin-top: 2em;
-        margin-left: 10em;
+        display: block;
+        margin: 0 auto;
     }
     /* Section Seven*/
-    .section-seven{
-        padding: 10px 0;
+    .section-seven .card{
+        width: 100%;
+        margin: 3% 0;
     }
-    .section-seven h1{
-        padding: 25px 0;
-        font-size: 27px;
-    }
-    .section-seven img{
-        margin-top: 15%;
-        margin-bottom: -20px;
+    .section-seven .card img{
+        height: 250px;
     }
     .choose-section{
         width: 100%;
@@ -892,20 +898,18 @@ footer{
     }
     .first-inner{
         display: block;
-        background-image: url('showcase.jpg');
+        background-image: url('../img/wilbrotech-image.jpg');
         background-size: cover;
         align-items: center;
         justify-content: center;
         text-align: center;
         color: white;
+        padding-bottom: 5%;
     }
     .first-inner h1{
         font-size: 35px;
         padding: 4% 2%;
         font-weight: bold;
-    }
-    .first-inner .btn-2{
-        margin-bottom: 5%;
     }
     /* Main Portfolio */
     #main-portfolio h1{
@@ -933,13 +937,15 @@ footer{
         display: inline-block;
         text-align: center;
     }
-    .section-seven img{
-        margin-top: 2%;
-        margin-bottom: 3%;
-        padding: 0 0 15px 15px;
-        width: 100%;
-        height: 100%;
+    /* #Section-five */
+    #section-five h2{
+        padding-top: 5%;
     }
+    .section-button{
+        display: block;
+        margin: 0 auto;
+    }
+    
 }
 @media screen and (max-width: 480px){
     .section-one .heading-one{
@@ -960,17 +966,6 @@ footer{
         font-size: 20px;
         margin-left: 5px;
     }
-    .section-six-text h3{
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 22px;
-    }
-    .section-six-text p{
-        padding: 10px 5px 0 5px;
-        line-height: 32px;
-        font-size: 16px;
-        text-align: justify;
-    }
     #second-text{
         padding-bottom: 4%;
     }
@@ -979,25 +974,10 @@ footer{
         padding: 10px 5px 0 5px;
     }
     .section-button{
-        margin: 0 0 15px 0;
+        display: block;
+        margin: 0 auto;
     }
-    .section-seven{
-        width: 100%;
-        height: 465px;
-        background: #E7F2FD;
-        padding: 5% 5px 0 5px;
-    }
-    .section-seven h1{
-        padding: 25px 0;
-        font-size: 25px;
-    }
-    .section-seven img{
-        margin-top: 2%;
-        margin-bottom: 3%;
-        padding: 0 0 15px 15px;
-        width: 100%;
-        height: 100%;
-    }
+    
     .choose-section p{
         font-size: 13px;
     }
@@ -1046,6 +1026,10 @@ footer{
         font-size: 42px;
         text-shadow: 3px 5px rgba(0, 0, 0, 0.748);
     }
+    #carousel-quote h3{
+        text-align: center;
+        font-size: 19px;
+    } 
     #caption-links p{
         margin-bottom: 30px;
     }
@@ -1068,27 +1052,22 @@ footer{
         margin-top: 3%;
     }
     /* Section Six */
-    .section-six{
-        padding-bottom: 7%;
-    }
-    
-    .section-six-text{
-        margin-left: 0;
-        margin-top: 4em;
-        text-align: justify;
-    }
-    .section-six-text h3{
-        font-size: 18px;
-        font-weight: bold;
-        padding-bottom: 22px;
-    }
-    .section-six-text p{
-        padding-top: 10px;
-        line-height: 32px;
-        font-size: 18px;
-        text-align: justify;
+    #section-six .col-md-6 h6{
+        line-height: 1.2;
     }
     #second-text p{
         font-size: 20px;
+    }
+    .image-responsive img{
+        height: 350px;
+    }
+    /* section seven */
+    .section-seven .card img{
+        margin: 0 auto;
+        width: 200px;
+        height: 160px;
+    }
+    .choose-section p{
+        line-height: 1.5;
     }
 }
