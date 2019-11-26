@@ -576,7 +576,7 @@ textarea:focus{
     background-image: linear-gradient(to right, #03D8F5,  #1D42DE);
     color: #fff;
     padding: 4% 20%;
-    margin-top: 3%;
+    margin-top: ;
 }
 .section-eight p{
     margin: 4% 0;
@@ -680,7 +680,75 @@ footer{
     opacity: 0.8;
 }
 
-
+/* Services Section */
+#service-one{
+    background: linear-gradient(to right, orange,green,violet);;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 3% 3%;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px dotted #FBCA17;
+}
+#service-one .arrow{
+    color: #FBCA17;
+    padding-top: 2%;
+    font-size: 45px;
+}
+.service-two{
+    background: url('../img/wilbro.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 3% 0;
+}
+.service-two h1{
+    
+}
+.service-two h4, .service-two h5{
+    color: blue;
+}
+.service-two .card{
+    background: #F5F6F7;
+    padding: 5% 0 3% 0;
+}
+.service-two a{
+    background: blue;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 2%;
+}
+.service-two a:hover{
+    text-decoration: none;
+}
+.service-two .card-img-top{
+    background: white;
+    display: block;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 100px;
+    padding: 15px 0;
+}
+.service-two .mgt{
+    color: #0d076e;
+}
+.service-two .content{
+    color: #022b04;
+}
+.service-two .advert{
+    color: #8f0483;
+}
+.service-two .logo{
+    color: #f77b72;
+}
+.service-two .video{
+    color: #f702ae;
+}
+.service-two .banner{
+    color: #6903a8;
+}
 @media screen and (max-width: 769px){
     .navbar-nav{
         margin-left: 0;
@@ -847,6 +915,10 @@ footer{
     /* Wave */
     .wave{
         display: none;
+    }
+    /* Service Section */
+    .service-two .card{
+        margin-bottom: 3%;
     }
 }
 @media screen and (max-width:340px){
