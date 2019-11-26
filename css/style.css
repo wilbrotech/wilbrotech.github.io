@@ -927,9 +927,13 @@ footer{
     #main-portfolio p{
         font-size: 35px;
     }
-    /* Slide Porfolio section */
-    
-    /* slide portfolio */
+    /* Section Three */
+    #section-three .card a{
+        border: 1px solid rgba(255, 187, 0, 0.795);
+        padding: 1px 8px;
+        border-radius: 5px;
+        font-size: 22px;
+    }
     .section-five{
         text-align: center;
     }
@@ -945,7 +949,13 @@ footer{
         display: block;
         margin: 0 auto;
     }
-    
+    /* Section Seven */
+    .section-seven h1{
+        font-size: 27px;
+    }
+    .section-seven #none{
+        display: none;
+    }
 }
 @media screen and (max-width: 480px){
     .section-one .heading-one{
