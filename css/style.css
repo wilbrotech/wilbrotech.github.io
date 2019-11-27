@@ -191,12 +191,12 @@ a{
     0%{transform: translateX(-50%) translateZ(0) scaleY(1)}
 }
 /* Inputs */
-input,
-textarea{
+.section-eight input,
+.section-eight textarea{
     border: none;
 }
-input:focus,
-textarea:focus{
+.section-eight input:focus,
+.section-eight textarea:focus{
     outline: none;
 }
 /*  Section Three */
@@ -599,7 +599,8 @@ textarea:focus{
     outline: none;
     color: #C5C8CB;
 }
-input:focus,textarea:focus{
+.section-eight input:focus,
+.section-eight textarea:focus{
     outline: none;
 }
 #next{
@@ -696,14 +697,9 @@ footer{
     font-size: 45px;
 }
 .service-two{
-    background: url('../img/wilbro.jpg');
-    background-attachment: fixed;
-    background-size: cover;
     padding: 3% 0;
 }
-.service-two h1{
-    
-}
+
 .service-two h4, .service-two h5{
     color: blue;
 }
@@ -749,6 +745,68 @@ footer{
 .service-two .banner{
     color: #6903a8;
 }
+/* Contact */
+#contact-first{
+    background: url('../img/about-wilbrotech.jpg');
+    background-size: cover;
+    padding: 3% 0;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.contact-one .card{
+    background: #F5F6F7;
+}
+.contact-one .planner{
+    margin: 0 auto;
+    width: 50%;
+    
+}
+.contact-one a{
+    background: blue;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 2%;
+}
+.contact-one a:hover{
+    text-decoration: none;
+}
+.text-size p{
+    font-size: 14px;
+}
+.contact-two .card{
+    background: #F5F6F7;
+}
+.contact-two h3{
+    padding: 5% 0;
+    color: #fff;
+} 
+.contact-two input{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    border: 1px solid rgb(65, 66, 65);
+}
+.contact-two input:focus,
+.contact-two textarea:focus{
+    outline: none;
+}
+.contact-two textarea{
+    width: 100%;
+    height: 157px;
+    border-radius: 5px;
+    border: 1px solid rgb(65, 66, 65);
+}
+#email{
+    border-top: 1px solid #F5F6F7;
+}
+.call{
+    border-left: 1px solid black;
+}
+/* .email p{
+    padding-left: -20px;
+} */
 @media screen and (max-width: 769px){
     .navbar-nav{
         margin-left: 0;
@@ -920,6 +978,17 @@ footer{
     .service-two .card{
         margin-bottom: 3%;
     }
+    /* Contact */
+    .contact-two{
+        margin-top: 3%;
+    }
+    #email{
+        text-align: center;
+    }
+    .call,
+    .email{
+        border: none;
+    }
 }
 @media screen and (max-width:340px){
     .first-inner{
@@ -1028,6 +1097,15 @@ footer{
     .section-seven #none{
         display: none;
     }
+
+    /* Contact */
+    
+    .contact-two h3{
+        padding: 5% 0;
+        color: #fff;
+        font-size: 99%;
+    } 
+   
 }
 @media screen and (max-width: 480px){
     .section-one .heading-one{
@@ -1093,6 +1171,12 @@ footer{
     .section-five .btn-md{
         display: inline-block;
         text-align: center;
+    }
+    /* contact */
+    .contact-one img{
+        margin: 0 auto;
+        width: 95%;
+        height: 200px;
     }
 }
 @media screen and (max-width:992px){
